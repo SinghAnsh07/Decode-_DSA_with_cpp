@@ -1,0 +1,121 @@
+question 1. Find the output for this code. Let input:- 2 3 6
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout << "Enter first number\n";
+cin >> x; // user will give ‘x’ a value.
+int y, m;
+cout << "Enter second number and value for taking modulus\n";
+cin >> y >> m; // user will give ‘y’ a value.
+int Z = (x * y) % m;
+cout << "Output is: " << Z;
+}
+
+answer is: 0
+
+--------------------------------------------------------------------------------
+
+question 2. Find the output for this code. Let input:- 3 2
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout<<"Enter first number\n";
+cin>>x; // user will give 'x' a value.
+int y;
+cout<<"Enter second number\n";
+cin>>y; // user will give 'y' a value.
+cout<<(x!=y)<<" "<<(x>=y);
+}
+
+answer is: 1 1
+here first it will check (x!=y) then it will check (x>=y)
+
+--------------------------------------------------------------------------------
+
+Find the output for this code. Let input:- 2 3
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int x,y;
+cin>>x>>y;
+x+=y;
+x-=y;
+x%=y;
+cout<<x;
+}
+
+answer is: 2 
+here x+=y will add y to the value of x 
+then x-=y will subtract y from the x which is 5 now 
+then x%=y will give remainder by puttinh x=2 and y=3
+
+
+--------------------------------------------------------------------------------
+
+
+question 4.WAP for finding the volume of the cylinder by taking radius and height as input.
+
+#include <iostream>
+using namespace std;
+int main(){
+    int r;
+    int h;
+    cout<<"Enter the radius and height of cylinder: ";
+    cin>>r>>h;
+    int volume;
+    volume=3.145*r*r*h;
+    cout<<"The volume is: ";
+    cout<<volume;
+}
+
+
+--------------------------------------------------------------------------------
+
+
+question 5.WAP to find the difference between ASCII of two characters ,take them as input .
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    char x,y;
+    cout << "Enter the first character: ";
+    cin >> x;
+    cout << "Enter the second character: ";
+    cin >> y;
+    int ascii1 = int(x);
+    int ascii2 = int(y);
+    int difference =(ascii1 - ascii2);
+    cout << "The difference between the ASCII values is: " << difference << endl;
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------
+
+question 6.Find the output of the below code
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+cout<<i;
+}
+
+answer is: 49 
+here inside the bracket first we do division 7/5 which will give 1 as they both are integer values
+then we do multiplication 1*6*6 that is 36
+then we add that is 49 
+then we find 49%100 will will give remainder 49 because here 49 is less than 100 

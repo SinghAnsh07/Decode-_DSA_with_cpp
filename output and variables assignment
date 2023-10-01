@@ -1,0 +1,65 @@
+assignment 1 : out and variables
+
+
+Ques: How can you output “Physics”and  “Wallah” in two different lines in C++?
+
+#include<iostream>
+using namespace std;
+    int main(){
+    cout<<"Physics";
+    cout<<endl;
+    cout<<"Wallah";
+    }
+
+
+Ques: Print 10 using 2 positive numbers less than 6  in C++ as output.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int x = 5;
+    int y = 5;
+    int sum = x + y;
+    cout<<sum;
+}
+
+Ques: How much space does following data types take ?
+
+Int         4 bytes 
+Bool		4 bytes 
+Float  		1 byte
+
+
+Ques: What is the output of this program?
+
+void main(){
+	int a=4;
+int b=5;
+a++;b--;
+cout<<++a<<” “<<b–-;
+}
+
+outut: 6 4
+
+Ques: WAP to find the circumference of a circle with radius 10 in C++.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int radius = 10;
+    int area = 3.145*radius*radius;
+    cout<<area;
+}
+
+Ques: How many of these can be a variable name?
+
+ 01PWskills   -> it can be a variable name
+
+ _FLOAT  -> it can be a variable name
+
+ int  -> it cannot be a variable name
+
+ FLOAT  -> it can be a variable name
+
+ You will succeed  -> it cannot be a variable name
+

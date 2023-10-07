@@ -1,0 +1,130 @@
+Ques : Take 2 integers input and print the greatest of them.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter the 1st number: ";
+    cin>>a;
+    cout<<"Enter the 2nd number: ";
+    cin>>b;
+    int c=max(a,b);
+    cout<<c<<" is the greatest";
+    return 0;
+}
+
+
+Ques : Given the radius of the circle predict whether numerically area of this circle is larger than the circumference or not.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int radius;
+    cout<<"Enter the radius: ";
+    cin>>radius;
+    if((2*3.145*radius)>(3.145*radius*radius)){
+        cout<<"circumference is greater than area";
+    }
+    if((3.145*radius*radius)>(2*3.145*radius)){
+        cout<<"area is greater than circumfernce";
+    }
+    return 0;
+}
+
+Ques : Any year is input through the keyboard. Write a program to determine whether the year is a leap year or not. (Considering leap year occurs after every 4 years)
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"Enter the year: ";
+    cin>>a;
+    if(a%4==0){
+        cout<<a<<" is leap year";
+    }
+    else{
+        cout<<a<<" is not leap year";
+    }
+    return 0;
+}
+
+
+Ques : Given the length and breadth of a rectangle, write a program to find whether numerically the area of the rectangle is greater than its perimeter.
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int l,b;
+    cout<<"Enter length: ";
+    cin>>l;
+    cout<<"Enter bredth: ";
+    cin>>b;
+    if((l*b)>(2*l+2*b)){
+        cout<<"area is greater than perimeter";
+    }
+    if((2*l+2*b)>(l*b)){
+        cout<<"perimeter is greater than area";
+    }
+    return 0;
+}
+
+Ques : Write a program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter 1st side: ";
+    cin>>a;
+    cout<<"Enter 2nd side: ";
+    cin>>b;
+    cout<<"Enter 3rd side: ";
+    cin>>c;
+    if(a==b && b==c){
+        cout<<"its a equilateral triangle";
+    }
+    else if((a==b!=c)||(b==c!=a)||(c==a!=b)){
+        cout<<"its a isosceles triangle";
+    }
+    else if((a!=b)&&(b!=c)&&(c!=a)){
+        cout<<"its a scalene triangle";
+    }
+    else{
+        cout<<"its not a triangle";
+    }
+    return 0;
+}
+
+
+predict the output
+
+#include<iostream>
+using namespace std;
+int main(){ 
+int a = 500, b, c ; 
+    if ( a >= 400 ) 
+    b = 300 ; 
+    c = 200 ; 
+    cout <<"value of b and c are respectively "<<b<<" and "<<c; 
+	return 0;
+}
+
+output-> value of b and c are respectively 300 and 200
+
+
+Ques : Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis or at the origin, viz. (0, 0)
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    float x, y;
+    printf("Enter the x-y coordinates of the point : ");
+    cin >> x >> y;
+    if (x == 0 && y == 0) cout << "The point is on the origin.";
+    if (x == 0 && y != 0) cout << "The point lie on the y-axis.";
+    if (x != 0 && y == 0) cout << "The points lie on the x-axis.";
+    if (x != 0 && y != 0) cout << "The points lie on the plane.";
+    return 0;
+}
